@@ -1,0 +1,1511 @@
+<!DOCTYPE html><html lang="en"><head>
+    
+    
+            
+    <!-- Meta information -->
+    <meta name="robots" content="all">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <link href="https://studio-assets.supernova.io/design-systems/6475/770cfc00-a5d0-457c-b7fb-a9058964bab5.png" rel="icon">
+    
+    <!-- Primary Meta Tags -->
+    <title>Contexts 101 | Made with Supernova</title>
+    <meta name="title" content="Contexts 101 | Made with Supernova">
+    <meta name="description" content="Manage and distribute organizational knowledge across AI tools, workflows, and teams. | Design system documentation, made with ❤️ using Supernova">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/latest/ai/contexts/contexts-101-ErxZIQdR">
+    <meta property="og:title" content="Contexts 101 | Made with Supernova">
+    <meta property="og:description" content="Manage and distribute organizational knowledge across AI tools, workflows, and teams. | Design system documentation, made with ❤️ using Supernova">
+    <meta property="og:image" content="https://studio-assets.supernova.io/design-systems/6475/670d5e03-4d92-4149-a391-c48cf3e1e226.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="/latest/ai/contexts/contexts-101-ErxZIQdR">
+    <meta property="twitter:title" content="Contexts 101 | Made with Supernova">
+    <meta property="twitter:description" content="Manage and distribute organizational knowledge across AI tools, workflows, and teams. | Design system documentation, made with ❤️ using Supernova">
+    <meta property="twitter:image" content="https://studio-assets.supernova.io/design-systems/6475/670d5e03-4d92-4149-a391-c48cf3e1e226.png">
+    
+    
+    
+    <!-- Fonts -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="/latest/assets/dist/docs.min.css?v=5.8.0">
+    <link rel="stylesheet" type="text/css" href="/latest/assets/dist/custom.css?v=df3f03c3">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/codemirror.min.js" integrity="sha512-3S64QagKiTlNjSfuh3UYtYSkP494WHoWc96YvbmB2BReHpNtxlrMNY6MbJLDpavcgD8Pj5p44F/PY586uVO5iA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/mode/javascript/javascript.min.js" integrity="sha512-I6CdJdruzGtvDyvdO4YsiAq+pkWf2efgd1ZUSK2FnM/u2VuRASPC7GowWQrWyjxCZn6CT89s3ddGI+be0Ak9Fg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/mode/xml/xml.min.js" integrity="sha512-LarNmzVokUmcA7aUDtqZ6oTS+YXmUKzpGdm8DxC46A6AHu+PQiYCUlwEGWidjVYMo/QXZMFMIadZtrkfApYp/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/mode/jsx/jsx.min.js" integrity="sha512-+0Bk5jqcZFYMi5WaRZaTboF7s25sht/1pxmg3sXqWDeidrrw1yRqDzF25jsMOnToR8iXSqzrHfAD5wiDO1lwSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/codemirror.min.css" integrity="sha512-uf06llspW44/LZpHzHT6qBOIVODjWtv4MxCricRxkzvopAlSWnTf6hpZTFxuuZcuNE9CBQhqE0Seu1CoRk84nQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Asset download -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js" integrity="sha512-xQBQYt9UcgblF6aCMrwU1NkVA7HCXaSN2oq0so80KO+y68M+n64FOcqgav4igHe6D5ObBLIf68DWv+gfBowczg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js" integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw==" crossorigin="anonymous"></script>
+    
+    <!-- Supernova meta -->
+    <script>
+        if (!window.supernova) {
+            window.supernova = {};
+        }
+    
+        window.supernova.designSystem = {
+            id: '60216',
+            name: 'Supernova Learn',
+            description: '',
+        };
+        window.supernova.version = {
+            version: 'Shared draft',
+            description: '',
+            versionName: 'Shared draft',
+        };
+        window.supernova.page = {
+            title: 'Contexts 101',
+            persistendId: '343bf71b-52c1-44f4-b5b1-9dc5a58a8f89',
+            shortPersistendId: 'ErxZIQdR',
+            lastPublished: 'Fri Jul 17 2026 11:47:20 GMT+0000 (Coordinated Universal Time)'
+        };
+    </script>
+    
+    
+    <script src="https://cdn-assets.supernova.io/storybook/js/storybook-playground-1.0.12.js"></script>
+   
+    
+    <!-- Start of supernova-help Zendesk Widget script -->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=f417c105-70f2-4a23-b9e0-b0237f203b51"> </script>
+<!-- End of supernova-help Zendesk Widget script -->
+
+    <style>
+      #onetrust-consent-sdk, #onetrust-banner-sdk, .onetrust-pc-dark-filter { display: none !important; opacity: 0 !important; pointer-events: none !important; }
+    </style>
+  </head>
+
+<body class="page-body/ai/contexts/contexts-101-ErxZIQdR">
+
+
+
+<div class="SNSearch SNSearch-container backdrop-blur">
+   <div class="SNSearch-box">
+      <header class="SNSearch-header" lang="en">
+         <label class="SNSearch-input-label">
+            <span class="icon">
+                               <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                  <circle cx="10" cy="10" r="7"></circle>
+                                  <line x1="21" y1="21" x2="15" y2="15"></line>
+                               </svg>
+                               </span>
+         </label>
+         <form class="SNSearch-form">
+            <input class="SNSearch-input" id="SNSearch-input" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Search documentation..." maxlength="64" enterkeyhint="go" style="">
+         </form>
+         <button class="SNSearch-close search">
+            <span class="icon">
+                               <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                               </svg>
+                               </span>
+         </button>
+      </header>
+      <div class="SNSearch-results">
+        
+      </div>
+      <footer class="SNSearch-footer" lang="en">
+         <div class="info">
+            <span>Cmd</span>/<span>Ctrl</span> + <span>K</span> to search
+         </div>
+         <div class="info">
+            <span>ESC</span> to clear / exit
+         </div>
+      </footer>
+   </div>
+</div>
+
+<!-- Document Wrapper -->
+<div id="main-wrapper"> 
+  
+  <!-- Content -->
+  <div id="content" class="site-wrapper">
+  
+    
+          
+          <!-- Header --> 
+          <header id="header" class="sticky-top style-dark">     
+              <!-- Navbar -->
+              <nav class="primary-menu navbar navbar-expand-lg">
+                  <div class="logo-wrapper">
+                      
+                      <!-- Logo -->
+                      <a href="/latest/welcome/welcome-to-supernova-Jocg9JuY" class="site-logo" aria-label="Supernova Learn">
+                          
+                              <img src="https://studio-assets.supernova.io/design-systems/6475/62eecd1a-bf87-4b62-9674-a366db713b0b.svg" alt="Supernova Learn">
+                      </a>
+          
+                          <div class="dropdown">
+                              <button class="btn-icon-button" id="design-systems-switcher" aria-label="Switch design system" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" lang="en">
+                                  
+                                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                     <path d="M8 9l4 -4l4 4"></path>
+                                     <path d="M16 15l-4 4l-4 -4"></path>
+                                  </svg>                    </button>
+                              <div class="dropdown-menu pull-left" aria-labelledby="design-systems-switcher">
+                                      <a class="dropdown-item" href="/ds-switch/92258?page_path=/ai/contexts/contexts-101-ErxZIQdR">
+                                          Supernova Developers
+                                      </a>
+                                      <a class="dropdown-item is-active" href="/ds-switch/60216?page_path=/ai/contexts/contexts-101-ErxZIQdR">
+                                          Supernova Learn
+          
+                                                                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                                 <path d="M5 12L9.33333 16L18 8"></path>
+                                                                              </svg>                            </a>
+                              </div>
+                          </div>
+                  </div>
+                  
+                  <div class="container-fluid">
+          
+                      
+                      <div id="header-nav" class="navbar-collapse">
+                          <ul class="navbar-nav">
+                                      
+                                      
+                                          <li><a class="typographyDocsViewNavigation " href="/latest/welcome/welcome-to-supernova-Jocg9JuY">Welcome</a></li>
+                                      
+                                      
+                                          <li><a class="typographyDocsViewNavigation " href="/latest/design-systems/design-systems-101-udW7KfEC">Design systems</a></li>
+                                      
+                                      
+                                          <li><a class="typographyDocsViewNavigation active" href="/latest/ai/overview-zFWEqtUy">AI</a></li>
+                                      
+                                      
+                                          <li><a class="typographyDocsViewNavigation " href="/latest/documentation/documentation-101-cMuyG3Mh">Documentation</a></li>
+                                      
+                                      
+                                          <li><a class="typographyDocsViewNavigation " href="/latest/automation/automation-101-n7UChYuk">Automation</a></li>
+                                      
+                                      
+                                          <li><a class="typographyDocsViewNavigation " href="/latest/settings/account/managing-your-profile-m1XCLLrW">Settings</a></li>
+                                      
+                                      
+                                          <li><a class="typographyDocsViewNavigation " href="/latest/releases/latest-releases-EhxYhfBn">Releases</a></li>
+                                      
+                          </ul>
+          
+                          <div class="utility-nav">
+          
+                              <div id="mobile-menu-container" class="dropdown">
+                                  <button class="btn btn-secondary btn-outlined" type="button" id="mobile-menu-selector" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">   
+                                      
+                                              
+                                              
+                                              
+                                              
+                                              
+                                              
+                                              
+                                              
+                                                      AI
+                                              
+                                              
+                                              
+                                              
+                                              
+                                              
+                                              
+                                              
+                                              
+                                              
+                                              
+                                              
+                                              
+                                              
+                                              
+                                              
+                                  </button>
+                                  <div class="dropdown-menu pull-right" aria-labelledby="mobile-menu-selector">
+                                          
+                                              <a class="dropdown-item " href="/latest/welcome/welcome-to-supernova-Jocg9JuY">Welcome</a>
+                                          
+                                              <a class="dropdown-item " href="/latest/design-systems/design-systems-101-udW7KfEC">Design systems</a>
+                                          
+                                              <a class="dropdown-item checked" href="/latest/ai/overview-zFWEqtUy">AI</a>
+                                          
+                                              <a class="dropdown-item " href="/latest/documentation/documentation-101-cMuyG3Mh">Documentation</a>
+                                          
+                                              <a class="dropdown-item " href="/latest/automation/automation-101-n7UChYuk">Automation</a>
+                                          
+                                              <a class="dropdown-item " href="/latest/settings/account/managing-your-profile-m1XCLLrW">Settings</a>
+                                          
+                                              <a class="dropdown-item " href="/latest/releases/latest-releases-EhxYhfBn">Releases</a>
+                                          
+                                  </div>
+                              </div>
+                                  <button class="btn-icon-button btn-search search" aria-label="Search in documentation" lang="en">
+                                      
+                                      <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                         <circle cx="10" cy="10" r="7"></circle>
+                                         <line x1="21" y1="21" x2="15" y2="15"></line>
+                                      </svg>
+                                                              </button>
+          
+                                  <a href="https://app.supernova.io/" class="btn cta-button btn-primary" id="cta-button" target="blank">
+                                  Get started for free
+                                  </a>
+                          </div>        
+                       </div>
+                  </div>
+          
+                   <!-- Sidebar Toggler -->
+                      <button id="sidebarCollapse" class="toggle-navbar" type="button" aria-label="Open navigation" lang="en">
+                          
+                          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                             <line x1="4" y1="6" x2="20" y2="6"></line>
+                             <line x1="4" y1="12" x2="20" y2="12"></line>
+                             <line x1="4" y1="18" x2="20" y2="18"></line>
+                          </svg>            </button>
+              </nav>
+          </header>
+          <!-- Header End -->
+                    
+      
+
+    <div class="site">
+      <div class="site-content-wrapper">
+        <div class="site-content">
+            <!-- Sidebar Navigation -->
+            <nav class="side-navigation-wrapper style-light" id="side-navigation">
+              <div class="bg-sidebar"></div>
+              <div class="sidebar-navigation docs-navigation">            
+                    
+                
+                
+                    
+                
+                 
+                
+                    <ul class="nav first-level-flat">
+                            
+                                
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/latest/ai/overview-zFWEqtUy">
+                                            <span>
+                                                Overview
+                                            </span>
+                                        </a>
+                                    </li>
+                            
+                                
+                                    <li class="nav-item group-open">
+                                    
+                                        <a class="nav-link group" href="/latest/ai/agent/agent-101-8UfCrOf2">
+                                            <span>
+                                                Agent
+                                            </span>
+                <span class="icon">
+                                                               <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                                  <polyline points="9 6 15 12 9 18"></polyline>
+                                                               </svg>
+                                                               </span>                        </a>
+                                                                                                            
+                                                                                                        
+                                                                                                        
+                                                                                                            
+                                                                                                        
+                                                                                                         
+                                                                                                        
+                                                                                                            <ul class="nav first-level-flat">
+                                                                                                                    
+                                                                                                                        
+                                                                                                                            <li class="nav-item">
+                                                                                                                                <a class="nav-link" href="/latest/ai/agent/agent-101-8UfCrOf2">
+                                                                                                                                    <span>
+                                                                                                                                        Agent 101
+                                                                                                                                    </span>
+                                                                                                                                </a>
+                                                                                                                            </li>
+                                                                                                                    
+                                                                                                                        
+                                                                                                                            <li class="nav-item">
+                                                                                                                                <a class="nav-link" href="/latest/ai/agent/agent-use-cases-XMOThVRx">
+                                                                                                                                    <span>
+                                                                                                                                        Agent use cases
+                                                                                                                                    </span>
+                                                                                                                                </a>
+                                                                                                                            </li>
+                                                                                                            </ul>
+                                                                                                                            </li>
+                            
+                                
+                                    <li class="nav-item group-open">
+                                    
+                                        <a class="nav-link group" href="/latest/ai/mcp/mcp-101-U5j7PDaO">
+                                            <span>
+                                                MCP
+                                            </span>
+                <span class="icon">
+                                                               <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                                  <polyline points="9 6 15 12 9 18"></polyline>
+                                                               </svg>
+                                                               </span>                        </a>
+                                                                                                            
+                                                                                                        
+                                                                                                        
+                                                                                                            
+                                                                                                        
+                                                                                                         
+                                                                                                        
+                                                                                                            <ul class="nav first-level-flat">
+                                                                                                                    
+                                                                                                                        
+                                                                                                                            <li class="nav-item">
+                                                                                                                                <a class="nav-link" href="/latest/ai/mcp/mcp-101-U5j7PDaO">
+                                                                                                                                    <span>
+                                                                                                                                        MCP 101
+                                                                                                                                    </span>
+                                                                                                                                </a>
+                                                                                                                            </li>
+                                                                                                                    
+                                                                                                                        
+                                                                                                                            <li class="nav-item">
+                                                                                                                                <a class="nav-link" href="/latest/ai/mcp/editor-mcp-zZuzFobd">
+                                                                                                                                    <span>
+                                                                                                                                        Editor MCP
+                                                                                                                                    </span>
+                                                                                                                                </a>
+                                                                                                                            </li>
+                                                                                                                    
+                                                                                                                        
+                                                                                                                            <li class="nav-item">
+                                                                                                                                <a class="nav-link" href="/latest/ai/mcp/consumer-mcp-NFCbQFL2">
+                                                                                                                                    <span>
+                                                                                                                                        Consumer MCP
+                                                                                                                                    </span>
+                                                                                                                                </a>
+                                                                                                                            </li>
+                                                                                                                    
+                                                                                                                        
+                                                                                                                            <li class="nav-item">
+                                                                                                                                <a class="nav-link" href="/latest/ai/mcp/mcp-analytics-gtC2nSvN">
+                                                                                                                                    <span>
+                                                                                                                                        MCP analytics
+                                                                                                                                    </span>
+                                                                                                                                </a>
+                                                                                                                            </li>
+                                                                                                            </ul>
+                                                                                                                            </li>
+                            
+                                
+                                    <li class="nav-item group-open">
+                                    
+                                        <a class="nav-link group active" href="/latest/ai/contexts/contexts-101-ErxZIQdR">
+                                            <span>
+                                                Contexts
+                                            </span>
+                <span class="icon">
+                                                               <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                                  <polyline points="9 6 15 12 9 18"></polyline>
+                                                               </svg>
+                                                               </span>                        </a>
+                                                                                                            
+                                                                                                        
+                                                                                                        
+                                                                                                            
+                                                                                                        
+                                                                                                         
+                                                                                                        
+                                                                                                            <ul class="nav first-level-flat">
+                                                                                                                    
+                                                                                                                        
+                                                                                                                            <li class="nav-item">
+                                                                                                                                <a class="nav-link active" href="/latest/ai/contexts/contexts-101-ErxZIQdR">
+                                                                                                                                    <span>
+                                                                                                                                        Contexts 101
+                                                                                                                                    </span>
+                                                                                                                                </a>
+                                                                                                                            </li>
+                                                                                                                    
+                                                                                                                        
+                                                                                                                            <li class="nav-item">
+                                                                                                                                <a class="nav-link" href="/latest/ai/contexts/feedback-7dxKEd1s">
+                                                                                                                                    <span>
+                                                                                                                                        Feedback
+                                                                                                                                    </span>
+                                                                                                                                </a>
+                                                                                                                            </li>
+                                                                                                                    
+                                                                                                                        
+                                                                                                                            <li class="nav-item">
+                                                                                                                            
+                                                                                                                                <a class="nav-link group" href="/latest/ai/contexts/get-started/create-a-context-bH7SDSOf">
+                                                                                                                                    <span>
+                                                                                                                                        Get started
+                                                                                                                                    </span>
+                                                                                                        <span class="icon">
+                                                                                                                                                       <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                                                                                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                                                                                                                          <polyline points="9 6 15 12 9 18"></polyline>
+                                                                                                                                                       </svg>
+                                                                                                                                                       </span>                        </a>
+                                                                                                                            </li>
+                                                                                                                    
+                                                                                                                        
+                                                                                                                            <li class="nav-item">
+                                                                                                                            
+                                                                                                                                <a class="nav-link group" href="/latest/ai/contexts/data-and-knowledge/design-system-data-QgAZlQHV">
+                                                                                                                                    <span>
+                                                                                                                                        Data and knowledge
+                                                                                                                                    </span>
+                                                                                                        <span class="icon">
+                                                                                                                                                       <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                                                                                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                                                                                                                          <polyline points="9 6 15 12 9 18"></polyline>
+                                                                                                                                                       </svg>
+                                                                                                                                                       </span>                        </a>
+                                                                                                                            </li>
+                                                                                                                    
+                                                                                                                        
+                                                                                                                            <li class="nav-item">
+                                                                                                                            
+                                                                                                                                <a class="nav-link group" href="/latest/ai/contexts/distribution/mcp-distribution-oZjXufm8">
+                                                                                                                                    <span>
+                                                                                                                                        Distribution
+                                                                                                                                    </span>
+                                                                                                        <span class="icon">
+                                                                                                                                                       <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                                                                                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                                                                                                                          <polyline points="9 6 15 12 9 18"></polyline>
+                                                                                                                                                       </svg>
+                                                                                                                                                       </span>                        </a>
+                                                                                                                            </li>
+                                                                                                            </ul>
+                                                                                                                            </li>
+                    </ul>
+                 
+                    <div class="nav-sn">
+                        <a href="https://supernova.io" target="_blank" lang="en">
+                            <svg fill="none" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 165 16"><title>Powered by Supernova</title><path fill-rule="evenodd" clip-rule="evenodd" d="M88.742 16c-1.791 0-3.221-1.969-3.416-4.584C82.71 11.22 80.739 9.787 80.739 8s1.971-3.22 4.59-3.416C85.523 1.97 86.952 0 88.743 0c1.79 0 3.22 1.969 3.416 4.584C94.775 4.78 96.74 6.21 96.74 8c0 1.79-1.967 3.22-4.583 3.416C91.961 14.03 90.532 16 88.742 16Zm0-1.28c.697 0 1.197-.646 1.434-1.03.468-.764.725-1.788.726-2.89a6.53 6.53 0 0 0-.16-1.454c-.696 1.114-2.243 1.912-4.133 2.066.077.866.318 1.659.698 2.278.236.384.737 1.03 1.434 1.03Zm-.932-7.342a1.12 1.12 0 1 0 1.863 1.244 1.12 1.12 0 0 0-1.863-1.244ZM95.457 8c0-.697-.645-1.198-1.03-1.434-.758-.468-1.784-.726-2.89-.722a6.53 6.53 0 0 0-1.453.16c1.114.696 1.912 2.242 2.066 4.132.865-.076 1.659-.317 2.277-.697.389-.241 1.03-.742 1.03-1.439Zm-6.719-6.72c-.698 0-1.199.646-1.435 1.03h.004c-.465.764-.727 1.789-.727 2.89-.002.49.05.977.156 1.454.698-1.113 2.243-1.912 4.134-2.066-.076-.866-.318-1.659-.698-2.278-.236-.384-.736-1.03-1.434-1.03Zm-3.412 4.588c-.866.076-1.659.318-2.278.698h.004c-.385.236-1.034.737-1.034 1.435 0 .697.646 1.198 1.03 1.434.762.464 1.788.725 2.89.725.489.002.976-.052 1.453-.16-1.112-.696-1.911-2.242-2.065-4.132Zm48.769-.234c.351.004.697.085 1.013.237l-.004-1.317a3.032 3.032 0 0 0-.994-.169c-.92 0-1.587.5-1.944 1.72V4.536h-1.308v6.928h1.308V8.928c0-1.825.549-3.294 1.929-3.294Zm-31.473 3.768h-1.198c.059 1.425 1.336 2.21 2.582 2.214 1.439 0 2.685-.787 2.685-2.078 0-.785-.371-1.65-1.81-2.005l-1.024-.252c-.445-.104-.89-.357-.89-.831 0-.535.445-.935 1.113-.935.547 0 1.097.356 1.112.89h1.247c0-1.395-1.217-2.018-2.389-2.018-1.395 0-2.374.875-2.374 2.018 0 1.115.668 1.676 1.825 1.987l.946.224c.549.12.95.386.95.904 0 .565-.523.965-1.395.965-.846 0-1.365-.49-1.38-1.083Zm10.086 2.062H114V4.536l-1.292.005v3.748c-.015 1.498-1.172 2.047-2.137 2.047-.964 0-1.661-.712-1.661-1.869v-3.93h-1.291V8.54c-.014 1.944 1.055 3.072 2.79 3.072.772 0 1.884-.371 2.299-1.232v1.083Zm17.182-2.908h-5.638c.193 1.231 1.083 1.84 2.267 1.84.845 0 1.631-.356 2.018-1.053l1.127.444c-.61 1.202-1.854 1.826-3.189 1.826-1.974 0-3.561-1.44-3.561-3.635s1.587-3.59 3.561-3.59 3.441 1.395 3.441 3.59a6.21 6.21 0 0 1-.026.578Zm-1.261-1.112c-.163-1.187-1.009-1.84-2.151-1.84-1.172 0-2.005.593-2.211 1.84h4.362Zm13.699.015v4.005h-1.291V7.533c0-1.157-.712-1.87-1.676-1.87-.965 0-2.122.55-2.122 2.048v3.748h-1.291V4.537h1.291V5.59c.415-.845 1.543-1.201 2.3-1.201 1.72 0 2.804 1.127 2.789 3.07Zm4.377-3.071c-1.973 0-3.62 1.394-3.62 3.59 0 2.196 1.646 3.635 3.62 3.635 1.974 0 3.635-1.44 3.635-3.635s-1.662-3.59-3.635-3.59Zm0 1.216c1.276 0 2.344.95 2.344 2.374 0 1.439-1.068 2.42-2.344 2.418-1.261 0-2.314-.98-2.314-2.418 0-1.424 1.053-2.374 2.314-2.374Zm9.085-1.068h1.393l-2.893 6.928h-1.261l-2.877-6.928h1.38l2.136 5.282 2.122-5.282Zm7.181 6.928h1.29V4.536h-1.29V5.62c-.461-.816-1.44-1.231-2.478-1.231-1.899 0-3.457 1.409-3.457 3.604 0 2.182 1.573 3.62 3.472 3.62.994 0 2.002-.445 2.463-1.246v1.098Zm-2.359-5.86c1.138 0 2.359.876 2.359 2.374h-.003c0 1.483-1.113 2.42-2.356 2.418-1.258 0-2.267-1.039-2.267-2.418 0-1.395 1.005-2.374 2.267-2.374Zm-38.411 2.404c0 2.195-1.558 3.605-3.457 3.605-1.038 0-2.017-.416-2.478-1.232v4.708h-1.29V4.539h1.29v1.098c.461-.8 1.469-1.246 2.463-1.246 1.899-.003 3.472 1.436 3.472 3.617Zm-1.308.015c0-1.38-1.009-2.419-2.284-2.419-1.232 0-2.344.935-2.344 2.419a2.33 2.33 0 0 0 .675 1.678 2.35 2.35 0 0 0 1.671.697c1.273 0 2.284-.981 2.284-2.375h-.002Z" fill="currentColor"></path><path d="M1.698 12V3.273h3.11c.68 0 1.242.123 1.688.37.446.248.78.586 1.001 1.015.222.426.333.906.333 1.44 0 .537-.112 1.02-.337 1.449A2.435 2.435 0 0 1 6.487 8.56c-.446.247-1.007.37-1.683.37H2.665V7.816h2.02c.429 0 .777-.074 1.044-.221.267-.15.463-.355.588-.614.125-.258.188-.552.188-.882 0-.33-.063-.622-.188-.878a1.345 1.345 0 0 0-.592-.6c-.267-.146-.62-.218-1.057-.218H3.014V12H1.698Zm10.248.132c-.613 0-1.149-.14-1.606-.422a2.845 2.845 0 0 1-1.066-1.18c-.252-.506-.379-1.097-.379-1.773 0-.679.127-1.273.38-1.781A2.84 2.84 0 0 1 10.34 5.79c.457-.281.993-.422 1.606-.422.614 0 1.15.14 1.607.422a2.84 2.84 0 0 1 1.065 1.185c.253.508.38 1.102.38 1.781 0 .676-.127 1.267-.38 1.773s-.608.899-1.065 1.18c-.458.281-.993.422-1.607.422Zm.005-1.07c.397 0 .727-.105.988-.315.261-.21.455-.49.58-.84.128-.349.191-.734.191-1.154 0-.418-.063-.801-.191-1.15a1.875 1.875 0 0 0-.58-.849c-.261-.213-.59-.32-.989-.32-.4 0-.732.107-.997.32a1.904 1.904 0 0 0-.583.848c-.125.35-.188.733-.188 1.15 0 .421.063.806.188 1.156.127.35.322.629.583.84.265.21.597.315.998.315ZM17.64 12l-1.927-6.545h1.317l1.283 4.806h.064l1.287-4.806h1.316l1.279 4.785h.064l1.274-4.785h1.317L22.992 12h-1.3l-1.33-4.726h-.097L18.934 12H17.64Zm11.105.132c-.645 0-1.2-.138-1.667-.413a2.805 2.805 0 0 1-1.073-1.172c-.25-.506-.375-1.098-.375-1.777 0-.67.125-1.261.375-1.773.252-.511.605-.91 1.056-1.197.455-.287.986-.43 1.594-.43.37 0 .727.06 1.074.183.347.122.658.313.933.575.276.261.493.6.652 1.018.16.415.239.92.239 1.513v.452H26.35v-.955h3.954a1.88 1.88 0 0 0-.204-.89 1.547 1.547 0 0 0-.576-.618 1.607 1.607 0 0 0-.86-.226c-.358 0-.67.088-.938.264-.264.173-.469.4-.613.682a1.968 1.968 0 0 0-.214.908v.745c0 .438.077.81.23 1.117.157.307.374.541.652.703.279.159.604.239.976.239.242 0 .462-.034.66-.103a1.37 1.37 0 0 0 .848-.831l1.207.218c-.097.355-.27.666-.52.933-.247.264-.558.47-.933.618a3.492 3.492 0 0 1-1.274.217ZM32.967 12V5.455h1.231v1.04h.068c.12-.353.33-.63.63-.832a1.805 1.805 0 0 1 1.032-.306 5.436 5.436 0 0 1 .541.03v1.218a2.288 2.288 0 0 0-.272-.047 2.6 2.6 0 0 0-.392-.03c-.301 0-.57.064-.806.192a1.425 1.425 0 0 0-.758 1.283V12h-1.274Zm7.192.132c-.645 0-1.2-.138-1.667-.413a2.805 2.805 0 0 1-1.073-1.172c-.25-.506-.375-1.098-.375-1.777 0-.67.125-1.261.375-1.773.252-.511.605-.91 1.056-1.197.455-.287.986-.43 1.594-.43.37 0 .727.06 1.074.183a2.6 2.6 0 0 1 .933.575c.276.261.493.6.652 1.018.16.415.239.92.239 1.513v.452h-5.203v-.955h3.954a1.88 1.88 0 0 0-.204-.89 1.546 1.546 0 0 0-.576-.618 1.608 1.608 0 0 0-.86-.226c-.358 0-.67.088-.938.264-.264.173-.469.4-.614.682a1.969 1.969 0 0 0-.213.908v.745c0 .438.077.81.23 1.117.157.307.374.541.653.703.278.159.603.239.975.239.242 0 .462-.034.66-.103a1.37 1.37 0 0 0 .848-.831l1.207.218c-.097.355-.27.666-.52.933a2.52 2.52 0 0 1-.933.618 3.493 3.493 0 0 1-1.274.217Zm6.672-.004c-.529 0-1-.135-1.415-.405-.412-.273-.736-.66-.971-1.163-.233-.506-.35-1.113-.35-1.82 0-.707.118-1.312.354-1.815.238-.503.565-.888.98-1.155.415-.267.885-.4 1.41-.4.407 0 .733.067.98.204.25.133.444.29.58.469.14.179.247.336.324.473h.077V3.273h1.274V12h-1.245v-1.018h-.106c-.077.139-.188.298-.332.477a1.847 1.847 0 0 1-.588.469c-.25.133-.574.2-.972.2Zm.281-1.087c.367 0 .676-.096.93-.29.255-.196.448-.467.579-.813.133-.347.2-.75.2-1.21 0-.455-.065-.853-.196-1.194a1.753 1.753 0 0 0-.575-.797c-.253-.19-.566-.285-.938-.285-.383 0-.703.1-.959.298-.255.199-.449.47-.58.814a3.318 3.318 0 0 0-.191 1.163c0 .438.065.831.196 1.18.13.35.324.627.58.832.258.201.576.302.954.302ZM55.17 12V3.273h1.274v3.243h.077c.074-.137.18-.294.32-.473.139-.18.332-.336.58-.47.246-.136.573-.204.98-.204.528 0 1 .134 1.414.4.415.268.74.653.976 1.156.239.503.358 1.108.358 1.815 0 .707-.118 1.314-.354 1.82-.235.502-.56.89-.971 1.163-.412.27-.882.405-1.41.405-.398 0-.724-.067-.977-.2a1.848 1.848 0 0 1-.588-.47 3.553 3.553 0 0 1-.328-.476h-.106V12H55.17Zm1.249-3.273c0 .46.067.864.2 1.21.134.347.327.618.58.814.253.194.562.29.929.29.38 0 .699-.1.954-.302.256-.205.45-.482.58-.831.133-.35.2-.743.2-1.18 0-.433-.065-.82-.196-1.164a1.78 1.78 0 0 0-.58-.814c-.255-.199-.575-.298-.958-.298-.37 0-.682.095-.938.285-.253.19-.444.456-.575.797-.13.341-.196.739-.196 1.193Zm6.744 5.727c-.19 0-.364-.015-.52-.046a1.634 1.634 0 0 1-.35-.094l.307-1.044c.233.062.44.09.622.08a.746.746 0 0 0 .482-.204c.142-.128.267-.336.375-.626l.157-.435-2.395-6.63h1.364l1.658 5.08h.068l1.658-5.08h1.368l-2.698 7.419c-.125.34-.284.629-.477.865a1.852 1.852 0 0 1-.69.537c-.267.119-.577.178-.93.178Z" fill="currentColor"></path></svg>
+                        </a>
+                    </div>
+                              </div>
+              <script>
+                // Restore scroll position, `menu.scroll.position.top` is set in in functionality.js
+                const scrollPosition = localStorage.getItem('menu.scroll.position.top');
+                if (scrollPosition) {
+                   document.querySelector('.sidebar-navigation').scrollTop = scrollPosition;
+                }
+              </script>
+            </nav>
+          
+          <!-- Docs Content -->
+          <main class="docs-content">
+
+            
+            
+            
+            
+            
+            
+            
+            
+                <div class="container-title style-boxed" style="background-image: url(https://studio-assets.supernova.io/design-systems/60216/4cd4069f-2fbb-4ffc-9823-0a177cfc2696.png); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+                <div class="slider">
+                    
+            
+                        
+                        <h1 class="page-title" style="">Contexts 101</h1>
+                        
+                            <p class="subtitle" style="">Manage and distribute organizational knowledge across AI tools, workflows, and teams.</p>
+                </div>
+            </div>
+            
+            <div class="no-container-tabs"></div>
+            
+            
+            <div class="content-container">
+              <section id="section-content-page">
+                <div class="tab-content" id="page-tab-content">
+
+                                    
+                                                            <div class="anchor" id="search-9847be35-3ab3-425b-b245-e12f2abcbcd1" aria-hidden="true"></div>
+                                                                
+                                                                
+                                                                        <h2 class="heading heading--level-2" id="section-what-are-contexts-98">
+                                                                                
+                                                                                
+                                                                            
+                                                                            What are contexts?                                <a data-copy-url="true" title="Copy link to heading" class="copy-anchor" href="#section-what-are-contexts-98" lang="en"><span class="css-pxzk9z" role="presentation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M16.971 3.029a4.367 4.367 0 0 0-6.175 0l-2.27 2.269 1.25 1.249 2.269-2.269a2.6 2.6 0 1 1 3.677 3.677l-2.269 2.269 1.25 1.25 2.268-2.27a4.367 4.367 0 0 0 0-6.175Z" fill="currentColor"></path><path d="m13.526 7.798-1.324-1.324-5.728 5.728 1.324 1.324 5.728-5.728Z" fill="currentColor"></path><path d="m6.547 9.776-1.25-1.25-2.268 2.27a4.367 4.367 0 1 0 6.175 6.175l2.27-2.269-1.25-1.249-2.269 2.269a2.6 2.6 0 1 1-3.677-3.677l2.269-2.269Z" fill="currentColor"></path></svg></span></a>
+                                                                                                        </h2>
+                                                            
+                                    
+                                    
+                                                                        
+                                                    
+                                                        <p id="search-98872c6b-9f1c-4b42-8e3f-312fe1fdd696">    
+                                                                         
+                                                                     
+                                                                     Contexts are reusable units of knowledge that provide guidance, instructions, documentation, and organizational expertise to humans and AI systems.</p>
+                                                
+                                    
+                                    
+                                                                        
+                                                    
+                                                        <p id="search-0526442f-3c9c-43b5-afd8-0e2e0ac57fa1">    
+                                                                         
+                                                                     
+                                                                     Your contexts act as the source of truth for information that needs to be shared consistently across multiple destinations.</p>
+                                                
+                                    
+                                    
+                                                                        
+                                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                              <div class="content-block content-block--embed">
+                                                                                                                                                                                                                                                                <div class="embed-container ratio ratio-16x9">
+                                                                                                                                                                                                                                                                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NESNyk7AtFY" allowfullscreen="" loading="lazy" aria-label="Embedded Youtube video" lang="en"></iframe>
+                                                                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                              </div>
+                                                                                                                                                                                                                                                            
+                                    
+                                    
+                                                                        
+                                                    
+                                                        <p id="search-f9f4aa85-6cd5-4cce-98d2-d5ebae1d1c4d">    
+                                                                         
+                                                                     
+                                                                     <strong>A context can contain:</strong></p>
+                                                
+                                    
+                                    
+                                                                        
+                                            <ul class="content-block">
+                                                    <div class="anchor" id="search-c6cc3d32-8796-4915-bb0b-ad0e156e86a5" aria-hidden="true"></div>
+                                                    <li>    
+                                                            
+                                                        
+                                                        Product documentation</li>
+                                    
+                                    
+                                                                        
+                                                    <div class="anchor" id="search-c6cc3d32-8796-4915-bb0b-ad0e156e86a5-1" aria-hidden="true"></div>
+                                                    <li>    
+                                                            
+                                                        
+                                                        Engineering standards</li>
+                                    
+                                    
+                                                                        
+                                                    <div class="anchor" id="search-c6cc3d32-8796-4915-bb0b-ad0e156e86a5-2" aria-hidden="true"></div>
+                                                    <li>    
+                                                            
+                                                        
+                                                        Design guidelines</li>
+                                    
+                                    
+                                                                        
+                                                    <div class="anchor" id="search-c6cc3d32-8796-4915-bb0b-ad0e156e86a5-3" aria-hidden="true"></div>
+                                                    <li>    
+                                                            
+                                                        
+                                                        Team processes</li>
+                                    
+                                    
+                                                                        
+                                                    <div class="anchor" id="search-c6cc3d32-8796-4915-bb0b-ad0e156e86a5-4" aria-hidden="true"></div>
+                                                    <li>    
+                                                            
+                                                        
+                                                        Domain knowledge</li>
+                                    
+                                    
+                                                                        
+                                                    <div class="anchor" id="search-c6cc3d32-8796-4915-bb0b-ad0e156e86a5-5" aria-hidden="true"></div>
+                                                    <li>    
+                                                            
+                                                        
+                                                        Operating procedures</li>
+                                    
+                                    
+                                                                        
+                                                    <div class="anchor" id="search-c6cc3d32-8796-4915-bb0b-ad0e156e86a5-6" aria-hidden="true"></div>
+                                                    <li>    
+                                                            
+                                                        
+                                                        Custom instructions</li>
+                                    
+                                    </ul>
+                                    
+                                                                        
+                                                                                                    
+                                                                                                    
+                                                                                                    <div class="content-block content-block--image sn-text-left" id="search-55ee21cb-c85d-4316-8d04-0d835ef0738d">
+                                                                                                           <img src="https://studio-assets.supernova.io/design-systems/60216/9a2805ac-3175-4465-9806-86dc948ad027.png" class="img-fluid" alt="Contexts intro" height="876" width="1418">
+                                                                                                        
+                                                                                                    </div>
+                                                                                                    
+                                    
+                                    
+                                                                        
+                                                            <div class="anchor" id="search-44f82697-d6c5-4183-895f-b5604e11288c" aria-hidden="true"></div>
+                                                                
+                                                                
+                                                                        <h2 class="heading heading--level-2" id="section-why-use-contexts-44">
+                                                                                
+                                                                                
+                                                                            
+                                                                            Why use contexts?                                <a data-copy-url="true" title="Copy link to heading" class="copy-anchor" href="#section-why-use-contexts-44" lang="en"><span class="css-pxzk9z" role="presentation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M16.971 3.029a4.367 4.367 0 0 0-6.175 0l-2.27 2.269 1.25 1.249 2.269-2.269a2.6 2.6 0 1 1 3.677 3.677l-2.269 2.269 1.25 1.25 2.268-2.27a4.367 4.367 0 0 0 0-6.175Z" fill="currentColor"></path><path d="m13.526 7.798-1.324-1.324-5.728 5.728 1.324 1.324 5.728-5.728Z" fill="currentColor"></path><path d="m6.547 9.776-1.25-1.25-2.268 2.27a4.367 4.367 0 1 0 6.175 6.175l2.27-2.269-1.25-1.249-2.269 2.269a2.6 2.6 0 1 1-3.677-3.677l2.269-2.269Z" fill="currentColor"></path></svg></span></a>
+                                                                                                        </h2>
+                                                            
+                                    
+                                    
+                                                                        
+                                                    
+                                                        <p id="search-16f752c7-9982-4d21-8087-b87def876cf3">    
+                                                                         
+                                                                     
+                                                                     Teams often duplicate the same knowledge across documentation, prompts, AI assistants, and internal tools.</p>
+                                                
+                                    
+                                    
+                                                                        
+                                                    
+                                                        <p id="search-8736441f-8194-47c6-9504-e16c3a871da3">    
+                                                                         
+                                                                     
+                                                                     Contexts solve this by allowing teams to maintain information once and distribute it everywhere it is needed. Contexts allow you to:</p>
+                                                
+                                    
+                                    
+                                                                        
+                                            <ul class="content-block">
+                                                    <div class="anchor" id="search-0bebf6c3-1c85-47b0-ab7b-dda2e9e3b1a0" aria-hidden="true"></div>
+                                                    <li>    
+                                                            
+                                                        
+                                                        Keep information consistent and reduce duplication across tools</li>
+                                    
+                                    
+                                                                        
+                                                    <div class="anchor" id="search-0bebf6c3-1c85-47b0-ab7b-dda2e9e3b1a0-1" aria-hidden="true"></div>
+                                                    <li>    
+                                                            
+                                                        
+                                                        Maintain knowledge and instructions more easily</li>
+                                    
+                                    
+                                                                        
+                                                    <div class="anchor" id="search-0bebf6c3-1c85-47b0-ab7b-dda2e9e3b1a0-2" aria-hidden="true"></div>
+                                                    <li>    
+                                                            
+                                                        
+                                                        Improve the quality of AI responses</li>
+                                    
+                                    
+                                                                        
+                                                    <div class="anchor" id="search-0bebf6c3-1c85-47b0-ab7b-dda2e9e3b1a0-3" aria-hidden="true"></div>
+                                                    <li>    
+                                                            
+                                                        
+                                                        Control the distribution of knowledge to appropriate teams</li>
+                                    
+                                    </ul>
+                                    
+                                                                        
+                                                    
+                                                        <p>&nbsp;</p>
+                                                
+                                    
+                                    
+                                                                        
+                                                            <div class="anchor" id="search-6ed04a8d-60e4-4792-93cf-1895d8acf5d4" aria-hidden="true"></div>
+                                                                
+                                                                
+                                                                        <h2 class="heading heading--level-2" id="section-types-of-contexts-6e">
+                                                                                
+                                                                                
+                                                                            
+                                                                            Types of contexts                                <a data-copy-url="true" title="Copy link to heading" class="copy-anchor" href="#section-types-of-contexts-6e" lang="en"><span class="css-pxzk9z" role="presentation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M16.971 3.029a4.367 4.367 0 0 0-6.175 0l-2.27 2.269 1.25 1.249 2.269-2.269a2.6 2.6 0 1 1 3.677 3.677l-2.269 2.269 1.25 1.25 2.268-2.27a4.367 4.367 0 0 0 0-6.175Z" fill="currentColor"></path><path d="m13.526 7.798-1.324-1.324-5.728 5.728 1.324 1.324 5.728-5.728Z" fill="currentColor"></path><path d="m6.547 9.776-1.25-1.25-2.268 2.27a4.367 4.367 0 1 0 6.175 6.175l2.27-2.269-1.25-1.249-2.269 2.269a2.6 2.6 0 1 1-3.677-3.677l2.269-2.269Z" fill="currentColor"></path></svg></span></a>
+                                                                                                        </h2>
+                                                            
+                                    
+                                    
+                                                                        
+                                                            <div class="anchor" id="search-d5438338-e848-4250-8a50-f72a07dfc1d9" aria-hidden="true"></div>
+                                                                
+                                                                
+                                                                        <h4 class="heading heading--level-4" id="section-design-system-context-d5">
+                                                                                
+                                                                                
+                                                                            
+                                                                            <strong>Design system context</strong>                                <a data-copy-url="true" title="Copy link to heading" class="copy-anchor" href="#section-design-system-context-d5" lang="en"><span class="css-pxzk9z" role="presentation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M16.971 3.029a4.367 4.367 0 0 0-6.175 0l-2.27 2.269 1.25 1.249 2.269-2.269a2.6 2.6 0 1 1 3.677 3.677l-2.269 2.269 1.25 1.25 2.268-2.27a4.367 4.367 0 0 0 0-6.175Z" fill="currentColor"></path><path d="m13.526 7.798-1.324-1.324-5.728 5.728 1.324 1.324 5.728-5.728Z" fill="currentColor"></path><path d="m6.547 9.776-1.25-1.25-2.268 2.27a4.367 4.367 0 1 0 6.175 6.175l2.27-2.269-1.25-1.249-2.269 2.269a2.6 2.6 0 1 1-3.677-3.677l2.269-2.269Z" fill="currentColor"></path></svg></span></a>
+                                                                                                        </h4>
+                                                            
+                                    
+                                    
+                                                                        
+                                                    
+                                                        <p id="search-36dd4687-a0d0-4a05-b1b8-5d2ef436e963">    
+                                                                         
+                                                                     
+                                                                     Connected to a design system. Distributes design system data alongside workspace knowledge like files and skills.</p>
+                                                
+                                    
+                                    
+                                                                        
+                                                            <div class="anchor" id="search-e69336c4-1448-4567-8722-49699e88c109" aria-hidden="true"></div>
+                                                                
+                                                                
+                                                                        <h4 class="heading heading--level-4" id="section-workspace-context-e6">
+                                                                                
+                                                                                
+                                                                            
+                                                                            <strong>Workspace context</strong>                                <a data-copy-url="true" title="Copy link to heading" class="copy-anchor" href="#section-workspace-context-e6" lang="en"><span class="css-pxzk9z" role="presentation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M16.971 3.029a4.367 4.367 0 0 0-6.175 0l-2.27 2.269 1.25 1.249 2.269-2.269a2.6 2.6 0 1 1 3.677 3.677l-2.269 2.269 1.25 1.25 2.268-2.27a4.367 4.367 0 0 0 0-6.175Z" fill="currentColor"></path><path d="m13.526 7.798-1.324-1.324-5.728 5.728 1.324 1.324 5.728-5.728Z" fill="currentColor"></path><path d="m6.547 9.776-1.25-1.25-2.268 2.27a4.367 4.367 0 1 0 6.175 6.175l2.27-2.269-1.25-1.249-2.269 2.269a2.6 2.6 0 1 1-3.677-3.677l2.269-2.269Z" fill="currentColor"></path></svg></span></a>
+                                                                                                        </h4>
+                                                            
+                                    
+                                    
+                                                                        
+                                                    
+                                                        <p id="search-fc6846e8-d3b8-4362-9a61-ba0f7914a477">    
+                                                                         
+                                                                     
+                                                                     Not attached to any design system. Distributes workspace knowledge only — files and skills. Use it for team knowledge that isn’t tied to a design system.</p>
+                                                
+                                    
+                                    
+                                                                        
+                                                
+                                                
+                                                
+                                                
+                                                <div class="content-block content-block--table data-table-wrapper">
+                                                <div>
+                                                  <table class="data-table header-row" style="width:756px">
+                                                  
+                                                    <thead>
+                                                    <tr>
+                                                    
+                                                
+                                                          
+                                                          <th class="left" style="width: 252px">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-033ddc45-b83d-45d9-a5c9-ae13d1d70016">    
+                                                                                                         
+                                                                                                     
+                                                                                                     Content type</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </th>
+                                                
+                                                          
+                                                          <th class="left" style="width: 252px">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-eb73b920-5679-4432-bfa5-502eefbd2eba">    
+                                                                                                         
+                                                                                                     
+                                                                                                     Design system context</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </th>
+                                                
+                                                          
+                                                          <th class="left" style="width: 252px">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-fde9e133-f3cc-4597-8345-5d5bfd6a589a">    
+                                                                                                         
+                                                                                                     
+                                                                                                     Workspace context</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                    
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-dd4bb67b-74c7-4bba-bccb-b4f12d5b262a">    
+                                                                                                         
+                                                                                                     
+                                                                                                     Documentation pages</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-f60d9110-54e8-41dc-b37e-f603de6ed17e">    
+                                                                                                         
+                                                                                                     
+                                                                                                     Yes</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-09f5195d-afe7-4845-b8ed-da63e34afc62">    
+                                                                                                         
+                                                                                                     
+                                                                                                     —</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                    </tr>
+                                                    <tr>
+                                                    
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-fdc09daf-c9a5-4a49-88f4-d72416641c01">    
+                                                                                                         
+                                                                                                     
+                                                                                                     Design tokens</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-1db423e3-ef67-4e49-a1bf-60ff9296298b">    
+                                                                                                         
+                                                                                                     
+                                                                                                     Yes</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-4676c90c-9985-4035-8781-f6651f1ad900">    
+                                                                                                         
+                                                                                                     
+                                                                                                     —</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                    </tr>
+                                                    <tr>
+                                                    
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-bf6d5d46-03fe-4b2c-9b30-c6dde4157d74">    
+                                                                                                         
+                                                                                                     
+                                                                                                     Token themes</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-71cec794-3826-4708-9238-0999ecbba481">    
+                                                                                                         
+                                                                                                     
+                                                                                                     Yes</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-0af67c59-0345-409d-9a1b-10d16c8dcf32">    
+                                                                                                         
+                                                                                                     
+                                                                                                     —</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                    </tr>
+                                                    <tr>
+                                                    
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-08686e09-79fb-41bb-93b0-4c09bcfd6152">    
+                                                                                                         
+                                                                                                     
+                                                                                                     Assets</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-dd6cf57c-3f57-413a-b390-727dce6df70c">    
+                                                                                                         
+                                                                                                     
+                                                                                                     Yes</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-819b7f10-736b-44cb-8f36-42c24bcdf848">    
+                                                                                                         
+                                                                                                     
+                                                                                                     —</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                    </tr>
+                                                    <tr>
+                                                    
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-2cb3d917-d2f6-475c-9f6e-648d6277e916">    
+                                                                                                         
+                                                                                                     
+                                                                                                     Code components</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-7cbcc362-3a29-409e-8e0d-6d51083496ad">    
+                                                                                                         
+                                                                                                     
+                                                                                                     Yes</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-62b7d998-c7a2-4c70-9771-c2965deb310c">    
+                                                                                                         
+                                                                                                     
+                                                                                                     —</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                    </tr>
+                                                    <tr>
+                                                    
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-f22f58dc-e54a-45d0-b042-570a9b33776c">    
+                                                                                                         
+                                                                                                     
+                                                                                                     Figma components</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-909537ae-12c2-41e2-b3ae-c33ee8bb503e">    
+                                                                                                         
+                                                                                                     
+                                                                                                     Yes</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-77732e96-0efa-42ed-927d-cb24b22ddd31">    
+                                                                                                         
+                                                                                                     
+                                                                                                     —</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                    </tr>
+                                                    <tr>
+                                                    
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-85e1bdd8-78c6-4550-b81b-9dcda674ea8f">    
+                                                                                                         
+                                                                                                     
+                                                                                                     Design system components</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-907305cc-7eeb-44ff-a361-2f744538ef3b">    
+                                                                                                         
+                                                                                                     
+                                                                                                     Yes</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-159cabee-d28c-42e4-8ffb-8b761fd97d51">    
+                                                                                                         
+                                                                                                     
+                                                                                                     —</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                    </tr>
+                                                    <tr>
+                                                    
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-038188be-02cc-48d8-8c52-ea138b86c885">    
+                                                                                                         
+                                                                                                     
+                                                                                                     Files</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-04a35ef7-9408-42d3-a620-214523602401">    
+                                                                                                         
+                                                                                                     
+                                                                                                     Yes</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-d9da09d8-fc57-4abe-ad41-f1b236c86772">    
+                                                                                                         
+                                                                                                     
+                                                                                                     Yes</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                    </tr>
+                                                    <tr>
+                                                    
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-7d40ec07-8f53-4311-8fc8-186aa30b3cb5">    
+                                                                                                         
+                                                                                                     
+                                                                                                     Skills</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-42dc4906-5311-48f3-b00a-07da66d612c5">    
+                                                                                                         
+                                                                                                     
+                                                                                                     Yes</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                
+                                                      <td class="left">
+                                                        
+                                                                    
+                                                                                    
+                                                                                        <p id="search-d3ca2af3-d058-49c5-b825-15551aabf402">    
+                                                                                                         
+                                                                                                     
+                                                                                                     Yes</p>
+                                                                                
+                                                                    
+                                                                    
+                                                                          </td>
+                                                    </tr>
+                                                  </tbody>
+                                                  </table>
+                                                  </div>
+                                                </div>
+                                                
+                                    
+                                    
+                                                                        
+                                                    
+                                                        <p>&nbsp;</p>
+                                                
+                                    
+                                    
+                                                                        
+                                                            <div class="anchor" id="search-37d423a6-81a9-4bec-b3e7-fc76a60d0625" aria-hidden="true"></div>
+                                                                
+                                                                
+                                                                        <h2 class="heading heading--level-2" id="section-next-steps-to-explore-37">
+                                                                                
+                                                                                
+                                                                            
+                                                                            Next steps to explore                                <a data-copy-url="true" title="Copy link to heading" class="copy-anchor" href="#section-next-steps-to-explore-37" lang="en"><span class="css-pxzk9z" role="presentation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M16.971 3.029a4.367 4.367 0 0 0-6.175 0l-2.27 2.269 1.25 1.249 2.269-2.269a2.6 2.6 0 1 1 3.677 3.677l-2.269 2.269 1.25 1.25 2.268-2.27a4.367 4.367 0 0 0 0-6.175Z" fill="currentColor"></path><path d="m13.526 7.798-1.324-1.324-5.728 5.728 1.324 1.324 5.728-5.728Z" fill="currentColor"></path><path d="m6.547 9.776-1.25-1.25-2.268 2.27a4.367 4.367 0 1 0 6.175 6.175l2.27-2.269-1.25-1.249-2.269 2.269a2.6 2.6 0 1 1-3.677-3.677l2.269-2.269Z" fill="currentColor"></path></svg></span></a>
+                                                                                                        </h2>
+                                                            
+                                    
+                                    
+                                                                        
+                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                    <div class="content-block content-block--shortcuts variant-image-top-4" id="search-445ef1f7-77ab-410e-970e-cfd08a3c9c5e">
+                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                                                                                      <a href="/latest/ai/contexts/get-started/create-a-context-bH7SDSOf" class="shortcut-item">
+                                                                                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                                                              <div class="preview" style="background: url(https://studio-assets.supernova.io/design-systems/60216/1cf2df76-66d0-42b7-934d-4b84eecf0397.png);background-size: cover;background-position: center;"></div>
+                                                                                                                                                                                                                                                                                              <div class="content">
+                                                                                                                                                                                                                                                                                                  <p class="title">Get started</p>
+                                                                                                                                                                                                                                                                                              </div>
+                                                                                                                                                                                                                                                                                              </a>
+                                                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                                                                                      <a href="/latest/ai/contexts/data-and-knowledge/design-system-data-QgAZlQHV" class="shortcut-item">
+                                                                                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                                                              <div class="preview" style="background: url(https://studio-assets.supernova.io/design-systems/60216/b785f662-3048-4e78-a685-63147e0e8704.png);background-size: cover;background-position: center;"></div>
+                                                                                                                                                                                                                                                                                              <div class="content">
+                                                                                                                                                                                                                                                                                                  <p class="title">Data and knowledge</p>
+                                                                                                                                                                                                                                                                                              </div>
+                                                                                                                                                                                                                                                                                              </a>
+                                                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                                                                                      <a href="/latest/ai/contexts/distribution/mcp-distribution-oZjXufm8" class="shortcut-item">
+                                                                                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                                                              <div class="preview" style="background: url(https://studio-assets.supernova.io/design-systems/60216/83009671-9b84-431f-8272-647f97ab7e0d.png);background-size: cover;background-position: center;"></div>
+                                                                                                                                                                                                                                                                                              <div class="content">
+                                                                                                                                                                                                                                                                                                  <p class="title">Distribution</p>
+                                                                                                                                                                                                                                                                                              </div>
+                                                                                                                                                                                                                                                                                              </a>
+                                                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                                                                          <a class="shortcut-item">
+                                                                                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                                                              <div class="preview" style="background: url(https://studio-assets.supernova.io/design-systems/60216/ef4472b0-bcab-4c31-8014-5c6375bf5eaa.png);background-size: cover;background-position: center;"></div>
+                                                                                                                                                                                                                                                                                              <div class="content">
+                                                                                                                                                                                                                                                                                                  <p class="title">Feedback</p>
+                                                                                                                                                                                                                                                                                              </div>
+                                                                                                                                                                                                                                                                                              </a>
+                                                                                                                                                                                                                                                                                          </div>
+                                                                                                                                                                                                                                                                                    
+                                    
+                                    
+                                                                        
+                                                    
+                                                        <p>&nbsp;</p>
+                                                
+                                    
+                                    
+                                    
+                    
+                
+                    <div class="page-bottom-navigation row">
+                        <div class="col left">
+                            <a class="segment" href="/latest/ai/mcp/mcp-analytics-gtC2nSvN">
+                                <div class="arrow">
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                       <line x1="5" y1="12" x2="19" y2="12"></line>
+                                       <line x1="5" y1="12" x2="11" y2="18"></line>
+                                       <line x1="5" y1="12" x2="11" y2="6"></line>
+                                    </svg>
+                                                    </div>
+                                <div class="segment-text">
+                                        <div class="section">MCP</div>
+                                    <div class="pagename">MCP analytics</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col right">
+                            <a href="/latest/ai/contexts/feedback-7dxKEd1s" class="segment">
+                                <div class="segment-text">
+                                        <div class="section">Contexts</div>
+                                    <div class="pagename">Feedback</div>
+                                </div>
+                                <div class="arrow">
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                       <line x1="5" y1="12" x2="19" y2="12"></line>
+                                       <line x1="13" y1="18" x2="19" y2="12"></line>
+                                       <line x1="13" y1="6" x2="19" y2="12"></line>
+                                    </svg>
+                                                    </div>
+                            </a>
+                        </div>
+                    </div>
+                                </div>
+              </section>
+              
+                  <div id="content-nav-container">
+                      <nav id="content-nav">
+                              <span class="content-nav-header">On this page</span>
+                              <ul>
+                                      <li class="active"><a href="#section-what-are-contexts-98">What are contexts?</a></li>
+                                      <li class=""><a href="#section-why-use-contexts-44">Why use contexts?</a></li>
+                                      <li class=""><a href="#section-types-of-contexts-6e">Types of contexts</a></li>
+                                      <li class=""><a href="#section-next-steps-to-explore-37">Next steps to explore</a></li>
+                              </ul>
+               
+                      </nav>
+                  </div>
+                          </div>
+
+            
+                <div class="container-footer small" "="">
+                    <div class="slider">
+                        <p class="text-muted">© 2026 Supernova Learn. <span lang="en">Page last updated on Jul 17, 2026, 11:47</span></p>
+                    </div>
+                </div>
+                      </main>
+        </div> 
+      </div> 
+    </div> 
+  </div>
+  
+</div>
+<!-- .site end --> 
+
+<!-- JavaScript -->
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/hotkeys-js@3.7.3/dist/hotkeys.min.js" integrity="sha512-0DDQV6AZNigMxQY3XxpqiEZO1bMT/zBgKtM3fhB3Yh4TGduw2HuFcJ7BSS96Ki1Am7gOY3RyRaE5cvdTsngRhw==" crossorigin="anonymous"></script>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> 
+
+<!-- Prism -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js" integrity="sha512-axJX7DJduStuBB8ePC8ryGzacZPr3rdLaIDZitiEgWWk2gsXxEFlm4UW0iNzj2h3wp5mOylgHAzBzM4nRSvTZA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-xCfKr8zIONbip3Q1XG/u5x40hoJ0/DtP1bxyMEi0GWzUFoUffE+Dfw1Br8j55RRt9qG7bGKsh+4tSb1CvFHPSA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/normalize-whitespace/prism-normalize-whitespace.min.js" integrity="sha512-kkot4E7n1RXhUCh8s9gRT04qHrnqR9muvEX/Cj38JPGhQF1jZ4BXfhggGYp9GrxV8J/2EJnCHYeWfKIdmWmaMw==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/toolbar/prism-toolbar.min.js" integrity="sha512-YrvgEHAi5/3o2OT+/vh1z19oJXk/Kk0qdVKbjEFl9VRmcLTaWRYzVziZCvoGpJ2TrnV7rB8pnJcz1ioVJjgw2A==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" integrity="sha512-pUNGXbOrc+Y3dm5z2ZN7JYQ/2Tq0jppMDOUsN4sQHVJ9AUQpaeERCUfYYBAnaRB9r8d4gtPKMWICNhm3tRr4Fg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Live sandbox -->
+<script src="https://cdn-assets.supernova.io/code/js/sandbox_v13.js"></script> 
+
+<!-- Search Support-->
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.5.3" integrity="sha512-W+QdO2uEYG8oKLFGKPGGwT43RQWOBzAcxSpPMRyR6zAC3DLjMPp6GxoPvasKfs1pbYYXd0ByDCOiBd7M554qbw==" crossorigin="anonymous"></script>
+<script src="/latest/si.js"></script>  
+
+<!-- General scripts -->
+<script src="/latest/assets/dist/docs.min.js"></script>
+<script src="/latest/assets/js/functionality.js"></script>
+<script src="/latest/assets/js/cookie-consent.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.8/dist/lottie-player.js" integrity="sha512-D3Ok1VpuyIDNHL5A0gjlV67UE6/d/OyEnsWISiMpIiGPxNTJqZxJQUZp35V8Ydu0LNytT2oK5yKs4w6X0ZDhrA==" crossorigin="anonymous" async=""></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@1.0.0/dist/dotlottie-player.js" integrity="sha384-BzOQB8VGEix/QbZaYjo2knJxnqpkQ/hKf4rTOWlkfu9bGxOzOIkpChbGavAz2LTY" crossorigin="anonymous" async=""></script>
+
+<!-- After loading -->
+<script>
+$(document).ready(function() {
+    // Load versions
+    const versionUrl = "/latest/../versions.json"
+    loadVersions(versionUrl)
+
+    // Load sandboxes, if any
+    const sandboxConfigUrl = "/latest/../sandbox.json"
+    loadSandboxes(sandboxConfigUrl)
+
+
+    $("input[data-toggle='list-search']").on("keyup", function() {
+        searchInList($(this),$(this).attr("data-list-id"));
+    });
+
+})
+</script>
+
+
+
+
+
+
+
+
+<iframe data-product="web_widget" title="No content" role="presentation" tabindex="-1" allow="microphone *" aria-hidden="true" src="about:blank" style="width: 0px; height: 0px; border: 0px; position: absolute; top: -9999px;"></iframe><div style="visibility: visible;"><div></div><div><style>
+        @-webkit-keyframes ww-995f3eae-3b11-46d2-bb54-bfaf2e0e3137-launcherOnOpen {
+          0% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+          30% {
+            -webkit-transform: translateY(-5px) rotate(2deg);
+                    transform: translateY(-5px) rotate(2deg);
+          }
+
+          60% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+
+          90% {
+            -webkit-transform: translateY(-1px) rotate(0deg);
+                    transform: translateY(-1px) rotate(0deg);
+
+          }
+
+          100% {
+            -webkit-transform: translateY(-0px) rotate(0deg);
+                    transform: translateY(-0px) rotate(0deg);
+          }
+        }
+        @keyframes ww-995f3eae-3b11-46d2-bb54-bfaf2e0e3137-launcherOnOpen {
+          0% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+          30% {
+            -webkit-transform: translateY(-5px) rotate(2deg);
+                    transform: translateY(-5px) rotate(2deg);
+          }
+
+          60% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+
+          90% {
+            -webkit-transform: translateY(-1px) rotate(0deg);
+                    transform: translateY(-1px) rotate(0deg);
+
+          }
+
+          100% {
+            -webkit-transform: translateY(-0px) rotate(0deg);
+                    transform: translateY(-0px) rotate(0deg);
+          }
+        }
+
+        @keyframes ww-995f3eae-3b11-46d2-bb54-bfaf2e0e3137-widgetOnLoad {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+
+        @-webkit-keyframes ww-995f3eae-3b11-46d2-bb54-bfaf2e0e3137-widgetOnLoad {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      </style><iframe title="Button to launch messaging window" id="launcher" style="color-scheme: light; height: 64px; width: 64px; position: fixed; bottom: 16px; right: 16px; border: 0px; margin-top: 0px; opacity: 0; box-shadow: rgba(23, 73, 77, 0.15) 0px 20px 30px; animation: 0.2s ease-in 0.5s 1 normal forwards running ww-995f3eae-3b11-46d2-bb54-bfaf2e0e3137-widgetOnLoad; z-index: 999999; border-radius: 50%;"></iframe></div></div></body></html>

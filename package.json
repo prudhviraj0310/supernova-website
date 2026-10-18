@@ -1,0 +1,20 @@
+{
+  "name": "supernova-website",
+  "version": "1.0.0",
+  "description": "Complete Supernova.io website clone with all 11 subsystems, static assets, and standalone server",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "supernova",
+    "design-system",
+    "tokens",
+    "mcp",
+    "documentation"
+  ],
+  "author": "prudhviraj0310",
+  "license": "MIT"
+}

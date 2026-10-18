@@ -1,0 +1,1 @@
+.dm-skeleton:where([data-inline-skeleton]){line-height:0;font-family:Arial,sans-serif!important}.dm-skeleton:not([class*=rounded]){border-radius:var(--dm-radius)}:where(.dm-skeleton:empty){display:block}.dm-skeleton>*,.dm-skeleton:after,.dm-skeleton:before{visibility:hidden!important}

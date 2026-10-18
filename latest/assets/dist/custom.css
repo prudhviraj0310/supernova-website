@@ -1,0 +1,70 @@
+
+
+:root {
+    /* =========================== */
+    /* "Native" theme configuration */
+    /* =========================== */
+
+    
+    --fontFamily: Inter, Arial, sans-serif;
+    
+    
+    --contentMaxWidth: 756px;
+    
+    --iconStrokeWidth: 2;
+    
+    --topNavHeight: 68px;
+    --logoHeight: 24px;
+    
+    --pageHeaderBackground: #f1f3f9ff;
+    --pageHeaderHeight: 330px;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZhrib2Bg-4.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZhrib2Bg-4.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZhrib2Bg-4.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZhrib2Bg-4.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+ 
+.side-navigation-wrapper {
+}
+
+ 
+#header {
+    --topNavBackground: #040a1eff !important;
+    --topNavBorderColor: #040a1eff !important;
+}
+
+/* Advanced theme configuration */
+:root {
+ --colorBorderStructure: transparent; 
+ --sideNavGroupMarginTop: 24px;
+}
+
+
+
+ /* Custom CSS overrides */
+body,
+html {
+
+}

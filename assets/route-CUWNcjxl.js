@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-DJVDe6nZ.js";import{_ as t}from"./index-BQdKoIMS.js";var n=e();function r(){return(0,n.jsx)(`div`,{className:`my-auto flex flex-col gap-36 px-24 py-36`,children:(0,n.jsx)(t,{})})}export{r as component};

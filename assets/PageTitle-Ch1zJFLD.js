@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-DJVDe6nZ.js";var t=e();function n({title:e,description:n}){return(0,t.jsxs)(`div`,{className:`flex flex-col gap-y-2 text-center`,children:[(0,t.jsx)(`h1`,{className:`text-title-3`,children:e}),n&&(0,t.jsx)(`p`,{className:`text-body text-neutral-faded`,children:n})]})}export{n as t};
